@@ -84,7 +84,7 @@ def check_surrounding(tile_row, tile_col):
         for j in range (-1, 2):
             if grid[tile_row + i][tile_col + j] == ' ':
                 blanks += 1
-            elif grid[tile_row + i][tile_col + j] == 'f':
+            elif grid[tile_row + i][tile_col + j] == 'F':
                 flags += 1
     return str(blanks), str(flags)
 
@@ -97,13 +97,13 @@ def solver_loop():
             if target != ' ':
                 if target == '0':
                     probe_surrounding(r, c)
-                elif target != 'f':
+                elif target != 'F':
                     blanks, flags = check_surrounding(r, c)
                     if int(flags) < int(target) and int(blanks) == (int(target) - int(flags)):
                         for i in range (-1, 2):
                             for j in range (-1, 2):
                                 if grid[r + i][c + j] == ' ':
-                                    grid[r + i][c + j] = 'f'
+                                    grid[r + i][c + j] = 'F'
                                     tiles_left -= 1
                                     mines -= 1
                                     print_grid()

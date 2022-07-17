@@ -2,9 +2,9 @@
 ## Descripton
 Challenge description follows below. Solution created by Luciano Orlandini.  
 
-This script will try to solve a Mine Sweeper grid provided by Demcon. Starting from a random tile probe, the logic will press all tiles which is certain to not contain a mine. Where the logic is sure there is a mine, it will place an 'f' to flag it.  
-If the logic finds itself in a position where it cannot possibly tell if there is a safe tile or a mine, it will probe a random one to progress the game. That's where an explosion may occur!
-The script can be ran in three difficulty levels: Beginner, Intermediate or Expert. Indicated by the command line arguments 1, 2 or 3.  
+This script will try to solve a Mine Sweeper grid provided by Demcon. Starting from a random tile probe, the logic will press all where it is certain to not contain a mine. Where the logic is sure there is a mine, it will place an 'F' to flag it.  
+If the logic finds itself in a position where it cannot possibly tell if there is a safe tile or a mine, it will probe a random one to progress the game, that's where an explosion may occur!  
+The script can be ran in three difficulty levels: Beginner, Intermediate or Expert, indicated by the command line arguments 1, 2 or 3.  
 
 ## Instructions
 As an example, to run the script with the Intermediate difficulty, type:
@@ -16,9 +16,6 @@ python3 solver.py 2
 ## Output
 The logic will constantly print the most up to date grid, the number of tiles left to probe and mines left to find.  
 If an error is made, the exploded tile will show a '*'.
-
-
-
 
 # DecodeDemcon3 Challenge Description
 
