@@ -6,8 +6,7 @@ int main(int argc, char * argv[])
 	
 	while (fibonacci < 4000000) {
 		fibonacci = first + second;
-		if (fibonacci % 2 == 0)
-			sum += fibonacci;
+		if (fibonacci % 2 == 0) sum += fibonacci;
 		first = second;
 		second = fibonacci;
 	}
