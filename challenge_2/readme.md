@@ -5,13 +5,13 @@ Challenge description follows below. Solution created by Luciano Orlandini.
 The program will ask the user for an input and will execute the automata accordingly.
 
 ## Instructions
-The program can be compiled with:
+Compile with:
 
 ```bash
 g++ -o automata automata.cpp
 ```
 
-And ran with:
+Run with:
 
 ```bash
 ./automata
